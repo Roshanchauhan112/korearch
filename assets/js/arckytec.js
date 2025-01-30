@@ -472,3 +472,67 @@
   });
 
 })(jQuery);
+
+
+                          //slider
+
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+let currentIndex = 0;
+const slideCount = slides.length;
+const interval = 3000; // 3 seconds
+
+// Function to update the slider position
+function updateSlider(index) {
+  slider.style.transform = `translateX(-${index * 100}%)`;
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[index].classList.add('active');
+}
+
+// Function to move to the next slide
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % slideCount;
+  updateSlider(currentIndex);
+}
+
+// Set up automated slider
+let slideInterval = setInterval(nextSlide, interval);
+
+// Add click event listeners to dots
+dots.forEach(dot => {
+  dot.addEventListener('click', () => {
+    clearInterval(slideInterval); // Stop the automated slider
+    currentIndex = parseInt(dot.dataset.index, 10);
+    updateSlider(currentIndex);
+    slideInterval = setInterval(nextSlide, interval); // Restart the slider
+  });
+});
+
+
+function myFunction() {
+  const firstName = document.getElementById("first-name")
+
+  firstName.onclick('click',function(){
+    alert("working")
+  })
+}
+
+
+
+
+// project section 
+
+function toggleDropdown(id) {
+  const content = document.getElementById(id);
+
+  // Close all dropdowns
+  document.querySelectorAll('.dropdown-content').forEach((dropdown) => {
+      if (dropdown !== content) {
+          dropdown.classList.remove('open');
+      }
+  });
+
+  // Toggle the clicked dropdown
+  content.classList.toggle('open');
+}

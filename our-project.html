@@ -2,7 +2,9 @@
 <html lang="en">
 
 <!-- Mirrored from gyanvi.edulin.in/korearch/our-project by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Jul 2024 09:29:03 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,8 +17,11 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
     <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
@@ -29,7 +34,67 @@
     <!-- styles -->
     <link rel="stylesheet" href="assets/css/arckytec.css" />
     <link rel="stylesheet" href="assets/css/arckytec-responsive.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* margin: 20px; */
+            /* padding: 10px; */
+            height: 100%;
+            width: 100%;
+        }
+
+        .sidebar {
+            margin: 20px;
+            width: 97%;
+            /* border: 2px solid black; */
+            /* padding: 10px; */
+        }
+
+        .dropdown {
+            margin-bottom: 10px;
+        }
+
+        .dropdown button {
+            width: 30%;
+            padding: 10px;
+            text-align: left;
+            background-color: #F1E9E9;
+            color: rgb(7, 7, 7);
+            border: none;
+            cursor: pointer;
+            outline: none;
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+
+        .dropdown button:hover {
+            background-color: #dfbe94;
+        }
+
+        .dropdown-content {
+            display: block;
+            overflow: hidden;
+            max-height: 0;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 0 10px;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            /* height: 900px; */
+        }
+
+        .dropdown-content p {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .dropdown-content.open {
+            max-height: fit-content;
+            /* You can adjust the max-height as per your content */
+            padding: 10px;
+        }
+    </style>
 </head>
+
 <body>
     <div class="preloader">
         <div class="preloader__image"></div>
@@ -37,71 +102,87 @@
     <!-- /.preloader -->
     <div class="page-wrapper">
         <header class="main-header-four">
-    <nav class="main-menu main-menu-four">
-        <div class="main-menu-four__wrapper">
-            <div class="container">
-                <div class="main-menu-four__wrapper-inner">
-                    <div class="main-menu-four__logo-box">
-                        <div>
-                            <a href="index-2.html"><img src="images/logo/vastu logo.jpg" height="76rem" width="100px" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="main-menu-four__content-box">
-                        <div class="main-menu-four__main-menu-box">
-                            <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-                            <ul class="main-menu__list">
-                                <li>
-                                    <a href="index-2.html">Home </a>
+            <nav class="main-menu main-menu-four">
+                <div class="main-menu-four__wrapper">
+                    <div class="container">
+                        <div class="main-menu-four__wrapper-inner">
+                            <div class="main-menu-four__logo-box">
+                                <div>
+                                    <a href="index.html"><img src="images/logo/korearch-light.png" height="55rem"
+                                            alt="" /></a>
+                                </div>
+                            </div>
+                            <div class="main-menu-four__content-box">
+                                <div class="main-menu-four__main-menu-box">
+                                    <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                    <ul class="main-menu__list">
+                                        <li>
+                                            <a href="index.html">Home </a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html">About</a>
+                                        </li>
 
-                                </li>
-                                <li>
-                                    <a href="about.html">About</a>
-                                </li>
+                                        <li class="dropdown">
+                                            <a href="#services">Services</a>
+                                            <ul class="footer-widget__services-list list-unstyled">
+                                                <li><a href="green-buildings.html"><i class="fa-solid fa-chevron-right">
+                                                        </i>Green Buildings </a></li>
+                                                <li><a href="premium-modular-villas-pods-and-farmhouses.html"><i
+                                                            class="fa-solid fa-chevron-right"></i>Premium Modular
+                                                        Villas, Pods, and Farm Houses</a></li>
+                                                <li><a href="civil-construction.html"><i
+                                                            class="fa-solid fa-chevron-right"></i> Civil
+                                                        Construction</a></li>
+                                                <li><a href="interior-and-exterior.html"><i
+                                                            class="fa-solid fa-chevron-right"></i> Interior and Exterior
+                                                        Solutions</a></li>
+                                                <li><a href="general-contracting-for-all-segments.html"><i
+                                                            class="fa-solid fa-chevron-right"></i> General Contracting
+                                                        for All Segments</a></li>
+                                            </ul>
+                                        </li>
 
-                                <li class="dropdown">
-                                    <a href="#services">Services</a>
-                                    <ul>
-                                        <li><a href="green-buildings.html">Green Buildings </a></li>
-                                        <li><a href="premium-modular-villas-pods-and-farmhouses.html">Premium Modular Villas, Pods, and Farm Houses</a></li>
-                                        <li><a href="civil-construction.html">Civil Construction</a></li>
-                                        <li><a href="interior-and-exterior.html">Interior and Exterior Solutions</a></li>
-                                        <li><a href="general-contracting-for-all-segments.html">General Contracting for All Segments</a></li>
+                                        <li class="dropdown">
+                                            <a href="Gallery.html">Gallery</a>
+                                        </li>
+
+                                        <li class="dropdown">
+                                            <a href="our-project.html">Our Projects</a>
+                                            <ul>
+                                                <!-- <li><a href="our-projects2#">Ongoing Projects</a></li>
+                                                <li><a href="our-projects2#">Completed Projects</a></li> -->
+                                                <!-- <li><a href="green-buildings.html">Green Building</a></li>
+                                                <li><a href="premium-modular-villas-pods-and-farmhouses.html">Premium
+                                                        Modular Structure</a></li>
+                                                <li><a href="civil-construction.html">Civil</a></li>
+                                                <li><a href="interior-and-exterior.html">Interior & Exterior
+                                                        Solution</a></li>
+                                                <li><a href="general-contracting-for-all-segments.html">General -->
+                                                        <!-- Contracting</a></li> -->
+                                                <li onclick="toggleDropdown('project1')" ><a  href="#">MGI Infra</a></li>
+                                                <li onclick="toggleDropdown('project2')"><a href="#">Volta Green Structures</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#services">Registration</a>
+                                            <ul class="footer-widget__services-list list-unstyled">
+                                                <li >
+                                                    <a  href="Career.html">Careers</a>
+                                                </li>
+                                                <li><a href="vendor.html">Vendor</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </li>
+                                </div>
 
-                                <li class="dropdown">
-                                    <a href="our-project.html">Our Projects</a>
-                                    <ul>
-                                        <!-- <li><a href="our-projects2#">Ongoing Projects</a></li>
-                                        <li><a href="our-projects2#">Completed Projects</a></li> -->
-                                        <li><a href="our-projects2.html#LGS">Light Gauge Structure</a></li>
-                                        <li><a href="our-projects2.html#HR">Hot Rolled</a></li>
-                                        <li><a href="our-projects2.html#H">Hybrid</a></li>
-                                        <li><a href="our-projects2.html#DW">Dry Walls</a></li>
-                                        <li><a href="our-projects2.html#PMS">Premium Modular Structure</a></li>
-                                        <li><a href="our-projects2.html#C">Civil</a></li>
-                                        <li><a href="our-projects2.html#IES">Interior & Exterior Solution</a></li>
-                                        <li><a href="our-projects2.html#GC">General Contracting</a></li>
-                                    </ul>
-                                </li>
-
-                                <!-- <li>
-                                    <a href="careers">Careers</a>
-                                </li> -->
-                                <li>
-                                    <a href="contact.html">Contact</a>
-                                </li>
-                                <!-- <li class="dropdown">
-                                    <a href="#">Registration</a>
-                                    <ul>
-                                        <li><a href="vendor-supply-registration">Vendor Supply Registration</a></li>
-                                        <li><a href="erection-supply-registration">Erection Supply Registration</a></li>
-                                    </ul>
-                                </li> -->
-                            </ul>
-                        </div>
-
-                        <!-- <div class="main-menu__right">
+                                <!-- <div class="main-menu__right">
                             <div class="main-menu__search-and-call">
                                 <div class="main-menu__call">
                                     <div class="main-menu__call-icon">
@@ -114,137 +195,695 @@
                                 </div>
                             </div>
                         </div> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </nav>
-</header>
-<div class="stricky-header stricked-menu main-menu">
-    <div class="sticky-header__content"></div>
-</div>        <!--Services One Start -->
-        <section class="services-one about-page-services" style="padding-top: 4rem;">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="section-title__tagline">Our Project</span>
-                    <h2 class="section-title__title">Our Best Project</h2>
-                </div>
-                <div class="row">
-                    <!--Services One Single Start -->
-                    <!-- <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="services-one__single">
-                            <div class="services-one__img">
+            </nav>
+        </header>
+        <div class="stricky-header stricked-menu main-menu">
+            <div class="sticky-header__content"></div>
+        </div> <!--Services One Start -->
+
+
+
+        <div id="project-section">
+            <div class="sidebar">
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('project1')">MGI Infra Pvt Ltd, Delhi</button>
+                    <div id="project1" class="dropdown-content">
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>MGI Infra Pvt Ltd, Delhi</a></h3>
+                                <p class="services-one__text">Police Chowki,Gomti River Front,Lucknow</p>
+                                <p class="services-one__text">Scope Of Work-Erection,ACP Cladding,Handrail,External MS
+                                    Facade with Glazing and MS facade.</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
                                 <img src="images/img1.jpg" alt="">
                             </div>
-                            <div class="services-one__content">
+                        </div>
+
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
                                 <h3 class="services-one__title"><a>MGI Infra Pvt Ltd, Delhi</a></h3>
-                                <p class="services-one__text">Police Chowki,Gomti River Front,Lucknow</p>
-                                <p class="services-one__text">Scope Of Work-Erection,ACP Cladding,Handrail,External MS Facade with Glazing and MS facade.</p>
+                                <p class="services-one__text">JPNIC Centre, Lucknow</p>
+                                <p class="services-one__text">Scope Of Work-Erection Of Arch MS Frame 12 M to 18 M Height
+                                </p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2022/12/mgi-2-640x518.jpg" alt="">
                             </div>
                         </div>
-                    </div> -->
-                    <!--Services One Single Start -->
-                    <!-- <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="services-one__single">
-                            <div class="services-one__img">
-                                <img src="images/img2.png" alt="">
-                            </div>
-                            <div class="services-one__content">
+
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
                                 <h3 class="services-one__title"><a>MGI Infra Pvt Ltd, Delhi</a></h3>
-                                <p class="services-one__text">Police Chowki,Gomti River Front,Lucknow</p>
-                                <p class="services-one__text">Scope Of Work-Erection,ACP Cladding,Handrail,External MS Facade with Glazing and MS facade.</p>
+                                <p class="services-one__text">Gandhi ashram Narkatiyaganj</p>
+                                <p class="services-one__text">Scope of Work -Erection, cladding with ACP.</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2022/12/gandhi-1-1.jpg" alt="">
                             </div>
                         </div>
-                    </div> -->
+
+
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>MGI Infra Pvt Ltd, Delhi</a></h3>
+                                <p class="services-one__text">Police Chowki,Gomti River Front,Lucknow</p>
+                                <p class="services-one__text">Scope Of Work-Erection,ACP Cladding,Handrail,External MS
+                                    Facade with Glazing and MS facade.</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-10-at-17.12.11-e1678684508450.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>MGI Infra Pvt Ltd, Delhi</a></h3>
+                                <p class="services-one__text">Police Chowki,Gomti River Front,Lucknow</p>
+                                <p class="services-one__text">Scope Of Work-Erection,ACP Cladding,Handrail,External MS
+                                    Facade with Glazing and MS facade.</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-04-at-11.19.14_d3f87cd7-640x640.jpg"
+                                    alt="">
+                            </div>
+
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('project2')">Volta Green Structures Pvt Ltd</button>
+                    <div id="project2" class="dropdown-content">
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                                <p class="services-one__text">PCBL Mundra Gujarat Canteen</p>
+                                <p class="services-one__text">Scope Of Work-Fabrication &amp; Erection Of steel frame
+                                    structure including all finishing</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2023/03/PCBL-1-1-640x640.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                                <p class="services-one__text">Velnesh war, Pune /G+1 Farm House, 6500 SQFT</p>
+                                <p class="services-one__text">Scope of Work -Superstructure -G+1 Farmhouse erection
+                                    including Full finish with External Ferron Panel</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2022/12/velnesh-640x499.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                                <p class="services-one__text">ISBM, G+2 Hostel Block , 27000 SQFT</p>
+                                <p class="services-one__text">Scope Of Work - Complete superstructure erection with Finish
+                                    including MEP IN 5 months duration Time. Note - External ACC block with ACP cladding
+                                    finish with LGSF wall frame structure</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2022/12/tata-640x517.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                                <p class="services-one__text">TATA Nest-In, G+1 Hostel Block , 18000 SQF</p>
+                                <p class="services-one__text">Scope Of Work-Complete erection with finish in 4 Month
+                                    excluding Foundation</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2022/12/tata-640x517.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                                <p class="services-one__text">Home Seva, Verdha -Maharashtra</p>
+                                <p class="services-one__text">Scope Of Work- Foundation with Superstructure erection with
+                                    Full finish in 1.5 Months.</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2022/12/home-seva-1-640x492.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                                <p class="services-one__text">JSW, G+3 Building (16 Nos -2BHK Flats ) /Area 15050 SQF /G4
+                                </p>
+                                <p class="services-one__text">Scope Of Work-Complete superstructure erection with Finish
+                                    including MEP IN 6 months duration Time.</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2022/12/jsw2-1.png" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                                <p class="services-one__text">JSW, G+3 Building (16 Nos -2BHK Flats ) /Area 15050 SQF /G1
+                                </p>
+                                <p class="services-one__text">Scope Of Work-Complete superstructure erection with Finish
+                                    including MEP IN 6 months duration time.</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2022/12/jsw-640x513.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                                <p class="services-one__text">JSW, G+3 Building (16 Nos -2BHK Flats ) /Area 15050 SQF /G3
+                                </p>
+                                <p class="services-one__text">Scope Of Work-Complete superstructure erection IN 1.5 months
+                                    duration Time.</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2022/12/jsw2-1.png" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                                <p class="services-one__text">Sarathi Studio, S+3 VFX Studio Hyderabad 24,500 SQFT.</p>
+                                <p class="services-one__text">Scope Of Work-Complete superstructure erection with Finish
+                                    including MEP and External Façade IN 7 months duration time.</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2022/12/jsw3.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                                <p class="services-one__text">Centre for Excellence (Andhra Gov), 24000 SQFT AREA</p>
+                                <p class="services-one__text">Scope Of Work-Complete superstructure erection with Finish
+                                    including MEP IN 8 months duration Time.</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2022/12/sarathi-640x468.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                                <p class="services-one__text">ISBM Roof top Expansion Last 2 Floor (3rd + 4th)</p>
+                                <p class="services-one__text">Scope Of Work-Complete superstructure erection with Finish
+                                    including MEP IN 5 months duration Time.</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2022/12/dc7be2ad-5b54-4e78-8dda-4edb4eae8ee8-640x640.jpeg"
+                                    alt="">
+                            </div>
+                        </div>
+        
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                                <p class="services-one__text">BIRLA GLOBAL UNIVERSITY , Orissa Ground Story Building (4 Nos-
+                                    17600 SQF )</p>
+                                <p class="services-one__text">Scope Of Work-Complete superstructure erection with Finish
+                                    including MEP IN 2.5 months duration Time.</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2022/12/isbm2-640x288.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                                <p class="services-one__text">G. Pullareddy Degree &amp; P. G College, Hyderabad</p>
+                                <p class="services-one__text">Scope Of Work-Complete superstructure erection,cladding with
+                                    feron panel in 3 months duration Time.</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2022/12/birla-640x640.png" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="services-one__single" id="services-one__single">
+                            <div class="services-one__content" id="services-one__content">
+                                <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                                <p class="services-one__text">Anganwadi Project TATA Nest In Madikeri, Karnataka </p>
+                                <p class="services-one__text">Scope Of Work-Total ten units are amde in Madikeri karnataka,
+                                    Erection, Cladding including all finishing in 2 months duration time.</p>
+                            </div>
+                            <div class="services-one__img" id="services-one__img">
+                                <img src="https://korearchinfra.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-10-at-17.19.50.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </section>
-        <!--Services One Start -->
-        <!--Site Footer Start-->
-        <footer class="site-footer">
-    <div class="site-footer__shape-1" style="background-image: url(assets/images/shapes/site-footer-shape-1.jpg);"></div>
-    <div class="">
-        <div class="container">
-            <div class="site-footer__top-inner">
-                <div class="row" style="padding-top:2rem !important;">
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="footer-widget__column footer-widget__about">
-                            <div class="footer-widget__logo">
-                                <a href="index-2.html"><img src="images/logo/vastu logo.jpg" height="55rem" width="80px" alt=""></a>
-                            </div>
-                            <p class="footer-widget__about-text">Your trusted partner in delivering excellence for medium and large-scale projects involving steel and concrete structures.
-                            </p>
-                            <div class="footer-widget__social">
-                                <a href="#"><span class="icon-facebook"></span></a>
-                                <a href="#"><span class="icon-linkedin"></span></a>
-                                <a href="#"><span class="icon-instagram"></span></a>
-                            </div>
-                        </div>
+
+
+        </div>
+
+
+
+
+        <section class="services-one about-page-services" style="padding-top: 4rem; display: flex;">
+            <div class="container" id="container">
+                <!-- <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>MGI Infra Pvt Ltd, Delhi</a></h3>
+                        <p class="services-one__text">Police Chowki,Gomti River Front,Lucknow</p>
+                        <p class="services-one__text">Scope Of Work-Erection,ACP Cladding,Handrail,External MS
+                            Facade with Glazing and MS facade.</p>
                     </div>
-                    <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                        <div class="footer-widget__column footer-widget__services">
-                            <div class="footer-widget__title-box">
-                                <h3 class="footer-widget__title">Quick Links</h3>
-                            </div>
-                            <ul class="footer-widget__services-list list-unstyled">
-                                <li><a href="index-2.html"><i class="fa-solid fa-chevron-right"> </i>Home</a></li>
-                                <li><a href="about.html"><i class="fa-solid fa-chevron-right"> </i>About</a></li>
-                                <li><a href="contact.html"><i class="fa-solid fa-chevron-right"> </i>Contact</a></li>
-                                <li><a href="our-project.html"><i class="fa-solid fa-chevron-right"> </i>Projects</a></li>
-                                <li><a href="services.html"><i class="fa-solid fa-chevron-right"> </i>Services</a></li>
-                            </ul>
-                        </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="images/img1.jpg" alt="">
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                        <div class="footer-widget__column footer-widget__services">
-                            <div class="footer-widget__title-box">
-                                <h3 class="footer-widget__title">Services</h3>
-                            </div>
-                            <ul class="footer-widget__services-list list-unstyled">
-                                <li><a href="green-buildings.html"><i class="fa-solid fa-chevron-right"> </i>Green Buildings </a></li>
-                                <li><a href="premium-modular-villas-pods-and-farmhouses.html"><i class="fa-solid fa-chevron-right"></i>Premium Modular Villas, Pods, and Farm Houses</a></li>
-                                <li><a href="civil-construction.html"><i class="fa-solid fa-chevron-right"></i> Civil Construction</a></li>
-                                <li><a href="interior-and-exterior.html"><i class="fa-solid fa-chevron-right"></i> Interior and Exterior Solutions</a></li>
-                                <li><a href="general-contracting-for-all-segments.html"><i class="fa-solid fa-chevron-right"></i> General Contracting for All Segments</a></li>
-                            </ul>
-                        </div>
+                </div>
+
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>MGI Infra Pvt Ltd, Delhi</a></h3>
+                        <p class="services-one__text">JPNIC Centre, Lucknow</p>
+                        <p class="services-one__text">Scope Of Work-Erection Of Arch MS Frame 12 M to 18 M Height
+                        </p>
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="footer-widget__column footer-widget__contact">
-                            <div class="footer-widget__title-box">
-                                <h3 class="footer-widget__title">Contact</h3>
-                            </div>
-                            <p class="footer-widget__contact-text">Rampur, Taramandal Road, Bhagat Chauraha,New Manokamna Palace Gorakhpur Uttar Pradesh 273016</p>
-                            <ul class="list-unstyled footer-widget__contact-list">
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-phone"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p><a href="tel:918826224808">+917080191477</a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-envelope"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p><a href="mailto:info@arckytec.com">vastudesign.const@gmail.com</a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-worldwide"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p><a href="#">vastudesignconst.com</a></p>
-                                    </div>
-                                </li>
-                            </ul>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2022/12/mgi-2-640x518.jpg" alt="">
+                    </div>
+                </div> -->
+
+                <!-- <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                        <p class="services-one__text">PCBL Mundra Gujarat Canteen</p>
+                        <p class="services-one__text">Scope Of Work-Fabrication &amp; Erection Of steel frame
+                            structure including all finishing</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2023/03/PCBL-1-1-640x640.jpg" alt="">
+                    </div>
+                </div> -->
+
+                <!-- <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>MGI Infra Pvt Ltd, Delhi</a></h3>
+                        <p class="services-one__text">Gandhi ashram Narkatiyaganj</p>
+                        <p class="services-one__text">Scope of Work -Erection, cladding with ACP.</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2022/12/gandhi-1-1.jpg" alt="">
+                    </div>
+                </div> -->
+
+                <!-- <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                        <p class="services-one__text">Velnesh war, Pune /G+1 Farm House, 6500 SQFT</p>
+                        <p class="services-one__text">Scope of Work -Superstructure -G+1 Farmhouse erection
+                            including Full finish with External Ferron Panel</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2022/12/velnesh-640x499.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                        <p class="services-one__text">ISBM, G+2 Hostel Block , 27000 SQFT</p>
+                        <p class="services-one__text">Scope Of Work - Complete superstructure erection with Finish
+                            including MEP IN 5 months duration Time. Note - External ACC block with ACP cladding
+                            finish with LGSF wall frame structure</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2022/12/tata-640x517.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                        <p class="services-one__text">TATA Nest-In, G+1 Hostel Block , 18000 SQF</p>
+                        <p class="services-one__text">Scope Of Work-Complete erection with finish in 4 Month
+                            excluding Foundation</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2022/12/tata-640x517.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                        <p class="services-one__text">Home Seva, Verdha -Maharashtra</p>
+                        <p class="services-one__text">Scope Of Work- Foundation with Superstructure erection with
+                            Full finish in 1.5 Months.</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2022/12/home-seva-1-640x492.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                        <p class="services-one__text">JSW, G+3 Building (16 Nos -2BHK Flats ) /Area 15050 SQF /G4
+                        </p>
+                        <p class="services-one__text">Scope Of Work-Complete superstructure erection with Finish
+                            including MEP IN 6 months duration Time.</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2022/12/jsw2-1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                        <p class="services-one__text">JSW, G+3 Building (16 Nos -2BHK Flats ) /Area 15050 SQF /G1
+                        </p>
+                        <p class="services-one__text">Scope Of Work-Complete superstructure erection with Finish
+                            including MEP IN 6 months duration time.</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2022/12/jsw-640x513.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                        <p class="services-one__text">JSW, G+3 Building (16 Nos -2BHK Flats ) /Area 15050 SQF /G3
+                        </p>
+                        <p class="services-one__text">Scope Of Work-Complete superstructure erection IN 1.5 months
+                            duration Time.</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2022/12/jsw2-1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                        <p class="services-one__text">Sarathi Studio, S+3 VFX Studio Hyderabad 24,500 SQFT.</p>
+                        <p class="services-one__text">Scope Of Work-Complete superstructure erection with Finish
+                            including MEP and External Façade IN 7 months duration time.</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2022/12/jsw3.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                        <p class="services-one__text">Centre for Excellence (Andhra Gov), 24000 SQFT AREA</p>
+                        <p class="services-one__text">Scope Of Work-Complete superstructure erection with Finish
+                            including MEP IN 8 months duration Time.</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2022/12/sarathi-640x468.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                        <p class="services-one__text">ISBM Roof top Expansion Last 2 Floor (3rd + 4th)</p>
+                        <p class="services-one__text">Scope Of Work-Complete superstructure erection with Finish
+                            including MEP IN 5 months duration Time.</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2022/12/dc7be2ad-5b54-4e78-8dda-4edb4eae8ee8-640x640.jpeg"
+                            alt="">
+                    </div>
+                </div>
+
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                        <p class="services-one__text">BIRLA GLOBAL UNIVERSITY , Orissa Ground Story Building (4 Nos-
+                            17600 SQF )</p>
+                        <p class="services-one__text">Scope Of Work-Complete superstructure erection with Finish
+                            including MEP IN 2.5 months duration Time.</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2022/12/isbm2-640x288.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                        <p class="services-one__text">G. Pullareddy Degree &amp; P. G College, Hyderabad</p>
+                        <p class="services-one__text">Scope Of Work-Complete superstructure erection,cladding with
+                            feron panel in 3 months duration Time.</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2022/12/birla-640x640.png" alt="">
+                    </div>
+                </div>
+
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                        <p class="services-one__text">Anganwadi Project TATA Nest In Madikeri, Karnataka </p>
+                        <p class="services-one__text">Scope Of Work-Total ten units are amde in Madikeri karnataka,
+                            Erection, Cladding including all finishing in 2 months duration time.</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-10-at-17.19.50.jpg"
+                            alt="">
+                    </div>
+                </div> -->
+<!-- 
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>MGI Infra Pvt Ltd, Delhi</a></h3>
+                        <p class="services-one__text">Police Chowki,Gomti River Front,Lucknow</p>
+                        <p class="services-one__text">Scope Of Work-Erection,ACP Cladding,Handrail,External MS
+                            Facade with Glazing and MS facade.</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-10-at-17.12.11-e1678684508450.jpg"
+                            alt="">
+                    </div>
+                </div> -->
+<!-- 
+                <div class="services-one__single" id="services-one__single">
+                    <div class="services-one__content" id="services-one__content">
+                        <h3 class="services-one__title"><a>MGI Infra Pvt Ltd, Delhi</a></h3>
+                        <p class="services-one__text">Police Chowki,Gomti River Front,Lucknow</p>
+                        <p class="services-one__text">Scope Of Work-Erection,ACP Cladding,Handrail,External MS
+                            Facade with Glazing and MS facade.</p>
+                    </div>
+                    <div class="services-one__img" id="services-one__img">
+                        <img src="https://korearchinfra.com/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-04-at-11.19.14_d3f87cd7-640x640.jpg"
+                            alt="">
+                    </div>
+                </div> -->
+
+
+                <div id="on-going">
+
+                    <P style="text-align: center; font-size: 3.3em; color: #F7992B; font-weight: 700;">ON GOING PROJECT
+                    </P>
+
+                    <div class="services-one__single" id="services-one__single">
+                        <div class="services-one__content" id="services-one__content">
+                            <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                            <p class="services-one__text">Farm house</p>
+                        </div>
+                        <div class="services-one__img" id="services-one__img">
+                            <img src="https://korearchinfra.com/wp-content/uploads/2023/10/IMG20230907183215-640x640.jpg"
+                                alt="">
                         </div>
                     </div>
 
-                    <!-- <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="services-one__single" id="services-one__single">
+                        <div class="services-one__content" id="services-one__content">
+                            <h3 class="services-one__title"><a>Volta Green Structures Pvt Ltd</a></h3>
+                            <p class="services-one__text">Birla Institute of Management Technology</p>
+                        </div>
+                        <div class="services-one__img" id="services-one__img">
+                            <img src="https://korearchinfra.com/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-07-at-10.44.37_175ee3a4-1-640x640.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Services One Start -->
+        <!--Site Footer Start-->
+        <footer class="site-footer">
+            <div class="site-footer__shape-1" style="
+            background-image: url(assets/images/shapes/site-footer-shape-1.jpg);
+        "></div>
+            <div class="">
+                <div class="container">
+                    <div class="site-footer__top-inner">
+                        <div class="row" style="padding-top: 2rem !important">
+                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                                <div class="footer-widget__column footer-widget__about">
+                                    <div class="footer-widget__logo">
+                                        <a href="index.html"><img src="images/logo/korearch-light.png" height="55rem"
+                                                alt="" /></a>
+                                    </div>
+                                    <p class="footer-widget__about-text">
+                                        Your trusted partner in delivering excellence for medium
+                                        and large-scale projects involving steel and concrete
+                                        structures.
+                                    </p>
+                                    <div class="footer-widget__social">
+                                        <a
+                                            href="https://www.facebook.com/people/Korearch-Infra-Pvt-Ltd/100083037145312/"><span
+                                                class="icon-facebook"></span></a>
+                                        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fkorearch"><span
+                                                class="icon-linkedin"></span></a>
+                                        <a href="https://www.instagram.com/korearchinfra/?hl=en"><span
+                                                class="icon-instagram"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                                <div class="footer-widget__column footer-widget__services">
+                                    <div class="footer-widget__title-box">
+                                        <h3 class="footer-widget__title">Quick Links</h3>
+                                    </div>
+                                    <ul class="footer-widget__services-list list-unstyled">
+                                        <li>
+                                            <a href="index.html"><i class="fa-solid fa-chevron-right"> </i>Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html"><i class="fa-solid fa-chevron-right">
+                                                </i>About</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html"><i class="fa-solid fa-chevron-right">
+                                                </i>Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="our-project.html"><i class="fa-solid fa-chevron-right">
+                                                </i>Projects</a>
+                                        </li>
+                                        <li>
+                                            <a href="services.html"><i class="fa-solid fa-chevron-right">
+                                                </i>Services</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                                <div class="footer-widget__column footer-widget__services">
+                                    <div class="footer-widget__title-box">
+                                        <h3 class="footer-widget__title">Services</h3>
+                                    </div>
+                                    <ul class="footer-widget__services-list list-unstyled">
+                                        <li>
+                                            <a href="green-buildings.html"><i class="fa-solid fa-chevron-right">
+                                                </i>Green
+                                                Buildings
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="premium-modular-villas-pods-and-farmhouses.html"><i
+                                                    class="fa-solid fa-chevron-right"></i>Premium
+                                                Modular Villas, Pods, and Farm Houses</a>
+                                        </li>
+                                        <li>
+                                            <a href="civil-construction.html"><i class="fa-solid fa-chevron-right"></i>
+                                                Civil
+                                                Construction</a>
+                                        </li>
+                                        <li>
+                                            <a href="interior-and-exterior.html"><i
+                                                    class="fa-solid fa-chevron-right"></i> Interior
+                                                and Exterior Solutions</a>
+                                        </li>
+                                        <li>
+                                            <a href="general-contracting-for-all-segments.html"><i
+                                                    class="fa-solid fa-chevron-right"></i> General
+                                                Contracting for All Segments</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                                <div class="footer-widget__column footer-widget__contact">
+                                    <div class="footer-widget__title-box">
+                                        <h3 class="footer-widget__title">Contact</h3>
+                                    </div>
+                                    <p class="footer-widget__contact-text">
+                                        A 12, Budha Vihar, Part-A Near Rajshree Hospital, Opposite
+                                        Sales Tax Office, Taramandal, Gorakhpur, 273017
+                                    </p>
+                                    <ul class="list-unstyled footer-widget__contact-list">
+                                        <li>
+                                            <div class="icon">
+                                                <span class="icon-phone"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p><a href="tel:918826224808">+91 882-622-4808</a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <span class="icon-envelope"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    <a href="mailto:info@arckytec.com">info@korearch.com</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <span class="icon-worldwide"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p><a href="#">Korearch Infrastructure</a></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                         <div class="footer-widget__column footer-widget__newsletter">
                             <div class="footer-widget__title-box">
                                 <h3 class="footer-widget__title">Newsletter</h3>
@@ -260,52 +899,55 @@
                             <div class="mc-form__response"></div>
                         </div>
                     </div> -->
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="site-footer__bottom">
-        <div class="container">
-            <div class="site-footer__bottom-inner">
-                <p class="site-footer__bottom-text"> Copyright © vastudesignconst.com Pvt Ltd </p>
+            <div class="site-footer__bottom">
+                <div class="container">
+                    <div class="site-footer__bottom-inner">
+                        <p class="site-footer__bottom-text">
+                            Copyright © Korearch Infrastructure Pvt Ltd
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</footer>
-<div class="mobile-nav__wrapper">
-    <div class="mobile-nav__overlay mobile-nav__toggler"></div>
-    <!-- /.mobile-nav__overlay -->
-    <div class="mobile-nav__content">
-        <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+        </footer>
+        <div class="mobile-nav__wrapper">
+            <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+            <!-- /.mobile-nav__overlay -->
+            <div class="mobile-nav__content">
+                <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
-        <div class="logo-box">
-            <a href="index-2.html" aria-label="logo image"><img src="https://gyanvi.edulin.in/404" height="50rem" alt="" /></a>
-        </div>
-        <!-- /.logo-box -->
-        <div class="mobile-nav__container"></div>
-        <!-- /.mobile-nav__container -->
+                <div class="logo-box">
+                    <a href="index.html" aria-label="logo image"><img src="https://gyanvi.edulin.in/404" height="50rem"
+                            alt="" /></a>
+                </div>
+                <!-- /.logo-box -->
+                <div class="mobile-nav__container"></div>
+                <!-- /.mobile-nav__container -->
 
-        <ul class="mobile-nav__contact list-unstyled">
-            <li>
-                <i class="fa fa-envelope"></i>
-                <a href="mailto:info@arckytec.com">vastudesign.const@gmail.com</a>
+                <ul class="mobile-nav__contact list-unstyled">
+                    <li>
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:info@arckytec.com">vastudesign.const@gmail.com</a>
 
-            </li>
-            <li>
-                <i class="fa fa-phone-alt"></i>
-                <a href="tel:918826224808">+917080191477</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone-alt"></i>
+                        <a href="tel:918826224808">+917080191477</a>
 
-            </li>
-        </ul><!-- /.mobile-nav__contact -->
-        <div class="mobile-nav__top">
-            <div class="mobile-nav__social">
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-facebook-square"></a>
-                <a href="#" class="fab fa-instagram"></a>
-            </div><!-- /.mobile-nav__social -->
-        </div><!-- /.mobile-nav__top -->
-    </div>
-</div>        <!--Site Footer End-->
+                    </li>
+                </ul><!-- /.mobile-nav__contact -->
+                <div class="mobile-nav__top">
+                    <div class="mobile-nav__social">
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-facebook-square"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div><!-- /.mobile-nav__social -->
+                </div><!-- /.mobile-nav__top -->
+            </div>
+        </div> <!--Site Footer End-->
     </div>
     <!-- /.page-wrapper -->
     <!-- /.mobile-nav__wrapper -->
@@ -322,6 +964,22 @@
             </form>
         </div>
     </div>
+
+    <script>
+        function toggleDropdown(id) {
+            const content = document.getElementById(id);
+
+            // Close all dropdowns
+            document.querySelectorAll('.dropdown-content').forEach((dropdown) => {
+                if (dropdown !== content) {
+                    dropdown.classList.remove('open');
+                }
+            });
+
+            // Toggle the clicked dropdown
+            content.classList.toggle('open');
+        }
+    </script>
     <!-- /.search-popup -->
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fas fa-arrow-up"></i></a>
     <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
@@ -345,4 +1003,5 @@
 
 
 <!-- Mirrored from gyanvi.edulin.in/korearch/our-project by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Jul 2024 09:29:06 GMT -->
+
 </html>

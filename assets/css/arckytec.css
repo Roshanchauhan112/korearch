@@ -3318,10 +3318,14 @@ a.button-style-3:hover::before {
   z-index: 1;
 }
 
+
 .services-one__single {
   position: relative;
-  display: block;
+  /* display: block; */
   margin-bottom: 48px;
+  height: fit-content; 
+  display: flex;
+  justify-content: space-between;
 }
 
 .services-one__img {
@@ -3329,7 +3333,12 @@ a.button-style-3:hover::before {
   display: block;
   overflow: hidden;
   z-index: 1;
+  /* width: 30px; */
+  /* height: 400px; */
+  /* background: #000; */
 }
+
+
 
 .services-one__img::after {
   position: absolute;
@@ -3352,6 +3361,9 @@ a.button-style-3:hover::before {
   width: 100%;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
 }
 
 .services-one__single:hover .services-one__img img {
@@ -3361,7 +3373,8 @@ a.button-style-3:hover::before {
 .services-one__content {
   position: relative;
   display: block;
-  background-color: var(--arckytec-white);
+  /* background-color: var(--arckytec-white); */
+  background-color: rgb(241, 233, 233);
   box-shadow: 0px 4px 63px 0px rgba(15, 28, 51, 0.1);
   padding: 22px 30px 53px;
   z-index: 2;
@@ -9829,25 +9842,30 @@ a.button-style-3:hover::before {
 /*--------------------------------------------------------------
 # Services Details
 --------------------------------------------------------------*/
-.services-details {
-  position: relative;
-  display: block;
-  padding: 130px 0 142px;
-  z-index: 1;
-}
+
 
 .services-details__left {
   position: relative;
   display: block;
-}
+} 
 
 .services-details__img {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .services-details__img img {
   width: 100%;
+  height: 400px; 
+  display: block; /* Remove extra space around the image */
+  object-fit: cover; /* Adjust this if you need specific scaling */
+}
+
+
+.container h3{
+  text-align: center;
 }
 
 .services-details__title {
@@ -10557,3 +10575,280 @@ a.button-style-3:hover::before {
   width: 1px;
   background-color: var(--arckytec-base);
 }
+
+
+/* slider */
+
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: transform 1s ease-in-out;
+  -moz-transition: transform 1s ease-in-out;
+  -ms-transition: transform 1s ease-in-out;
+  -o-transition: transform 1s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slide img {
+  width: 100%; /* Ensure the image spans the full width */
+  height: 100%; /* Ensure the image spans the full height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+/* Dots */
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #000;
+}
+
+.dot:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* slider */
+
+
+
+.custom-slider {
+  position: relative;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 80vh; /* Full viewport height for the slider */
+  overflow: hidden;
+}
+
+/* .swiper-slide {
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            .swiper-slide .slide-text {
+              position: absolute;
+              top: 0%;
+              background: rgb(0, 0, 0);
+              background: rgba(0, 0, 0, 0.5);
+              color: #f1f1f1;
+              width: 100%;
+              padding: 20px;
+          }
+} */
+
+.swiper-slide {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.swiper-slide .slide-text {
+  position: absolute;
+  top: 70%;
+  height: 630px;
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the slide without distortion */
+}
+
+.swiper-pagination {
+  bottom: 20px; /* Adjust position if needed */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0c0c0c;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+
+
+
+
+/* .slide-text {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+} */
+
+.slide-text h1{
+  /* background-color: #000; */
+  color: yellow;
+}
+
+
+
+
+/* form */
+
+#service-form{
+  width: 80%;
+  height: fit-content;
+  margin: 0 auto;
+  /* background-color: #3e4b5e; */
+}
+
+.form-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input[type="file"] {
+  border: none;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-actions button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-actions .reset-btn {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.form-actions .send-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.form-actions .reset-btn:hover {
+  background-color: #e6b800;
+}
+
+.form-actions .send-btn:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+
+
+/* project  */
+
+#container{
+  display: flex; 
+  flex-direction: column; 
+  width: 100%;
+}
+
+#services-one__single{
+  display: flex; 
+  width: 100%;
+  justify-content: space-between;
+  background-color: #d1d9e2;
+}
+
+#services-one__content{
+  display: block;
+  /* background-color: #0e1e36; */
+  width: 70%;
+  margin: 10px;
+}
+
+#services-one__img{
+  width: 50%; 
+  /* background-color: black;  */
+  display: flex; 
+  margin: 10px;
+}
+
+#services-one__img img{
+  height: 400px;
+  width: 500px;
+}
+
+#on-going p {
+    padding: 50px;
+}
+
+

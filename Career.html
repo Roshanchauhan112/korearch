@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gyanvi.edulin.in/korearch/our-project by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Jul 2024 09:29:03 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vastudesignconst.com</title>
+    <title>Korearch Infrastructure</title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/logo/vastu logo.jpg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/logo/vastu logo.jpg" />
-    <link rel="icon" type="image/png" sizes="16x16" href="images/logo/vastu logo.jpg" />
-    <meta name="description" content="vastudesignconst.com" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/korearch-onelogo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/korearch-onelogo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/korearch-onelogo.png" />
+    <meta name="description" content="Korearch Infrastructure" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
     <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
@@ -30,11 +32,13 @@
     <link rel="stylesheet" href="assets/css/arckytec.css" />
     <link rel="stylesheet" href="assets/css/arckytec-responsive.css" />
 </head>
+
 <body>
     <div class="preloader">
         <div class="preloader__image"></div>
     </div>
     <!-- /.preloader -->
+
     <div class="page-wrapper">
         <header class="main-header-four">
             <nav class="main-menu main-menu-four">
@@ -78,6 +82,20 @@
                                             </ul>
                                         </li>
 
+                                        <li class="dropdown">
+                                            <a href="Gallery.html">Gallery</a>
+                                        </li>
+
+                                        <li class="dropdown">
+                                            <a href="our-project.html">Our Projects</a>
+                                            <ul>
+                                                <!-- <li><a href="our-projects2#">Ongoing Projects</a></li>
+                                                <li><a href="our-projects2#">Completed Projects</a></li> -->
+                                                <li onclick="toggleDropdown('project1')" ><a  href="our-project.html">MGI Infra</a></li>
+                                                <li onclick="toggleDropdown('project2')"><a href="our-project.html">Volta Green Structures</a></li>
+                                            </ul>
+                                        </li>
+
                                         <li>
                                             <a href="contact.html">Contact</a>
                                         </li>
@@ -114,46 +132,63 @@
                 </div>
             </nav>
         </header>
-<div class="stricky-header stricked-menu main-menu">
-    <div class="sticky-header__content"></div>
-</div>        <!--Services One Start -->
-        <section class="services-one about-page-services" style="padding-top: 4rem;">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="section-title__tagline">Our Project</span>
-                    <h2 class="section-title__title">Our Best Project</h2>
-                </div>
-                <div class="row">
-                    <!--Services One Single Start -->
-                    <!-- <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="services-one__single">
-                            <div class="services-one__img">
-                                <img src="images/img1.jpg" alt="">
-                            </div>
-                            <div class="services-one__content">
-                                <h3 class="services-one__title"><a>MGI Infra Pvt Ltd, Delhi</a></h3>
-                                <p class="services-one__text">Police Chowki,Gomti River Front,Lucknow</p>
-                                <p class="services-one__text">Scope Of Work-Erection,ACP Cladding,Handrail,External MS Facade with Glazing and MS facade.</p>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!--Services One Single Start -->
-                    <!-- <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="services-one__single">
-                            <div class="services-one__img">
-                                <img src="images/img2.png" alt="">
-                            </div>
-                            <div class="services-one__content">
-                                <h3 class="services-one__title"><a>MGI Infra Pvt Ltd, Delhi</a></h3>
-                                <p class="services-one__text">Police Chowki,Gomti River Front,Lucknow</p>
-                                <p class="services-one__text">Scope Of Work-Erection,ACP Cladding,Handrail,External MS Facade with Glazing and MS facade.</p>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-        <!--Services One Start -->
+
+        <div id="main" style="margin: 30px; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+            <h1 style=" font-size: 3rem; text-transform: uppercase;">Cereer</h1>
+                <form style="width: 600px;" id="jobForm" onsubmit="return validateForm() ">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name">
+                        <span id="first-name-error" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+                        <span id="last-name-error" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <span id="email-error" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        <span id="phone-error" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <select id="city" name="city">
+                            <option value="">Select a city</option>
+                            <option value="Gorakhpur">Gorakhpur</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Varanasi">Varanasi</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                        <span id="city-error" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+                        <span id="address-error" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="cv">Add Your CV</label>
+                        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+                        <small>Only .pdf/.doc/.docx. Size: less than 1 MB</small>
+                        <span id="cv-error" class="error"></span>
+                    </div>
+                    <div class="form-actions">
+                        <button type="reset" class="reset-btn">Reset</button>
+                        <button type="submit" class="send-btn">Send</button>
+                    </div>
+                </form>
+            </body>
+
+            </html>
+
+        </div>
+
         <!--Site Footer Start-->
         <footer class="site-footer">
             <div class="site-footer__shape-1" style="
@@ -319,8 +354,70 @@
                 </div>
             </div>
         </footer>
+        <div class="mobile-nav__wrapper">
+            <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+            <!-- /.mobile-nav__overlay -->
+            <div class="mobile-nav__content">
+                <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+                <div class="logo-box">
+                    <a href="index.html" aria-label="logo image"><img src="https://gyanvi.edulin.in/404" height="50rem"
+                            alt="" /></a>
+                </div>
+                <!-- /.logo-box -->
+                <div class="mobile-nav__container"></div>
+                <!-- /.mobile-nav__container -->
+
+                <ul class="mobile-nav__contact list-unstyled">
+                    <li>
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:info@arckytec.com">info@korearch.com</a>
+
+                    </li>
+                    <li>
+                        <i class="fa fa-phone-alt"></i>
+                        <a href="tel:918826224808">+91 882-622-4808</a>
+
+                    </li>
+                </ul><!-- /.mobile-nav__contact -->
+                <div class="mobile-nav__top">
+                    <div class="mobile-nav__social">
+                        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fkorearch"
+                            class="fab fa-twitter"></a>
+                        <a href="https://www.facebook.com/people/Korearch-Infra-Pvt-Ltd/100083037145312/"
+                            class="fab fa-facebook-square"></a>
+                        <a href="https://www.instagram.com/korearchinfra/?hl=en" class="fab fa-instagram"></a>
+                    </div><!-- /.mobile-nav__social -->
+                </div><!-- /.mobile-nav__top -->
+            </div>
+        </div> <!--Site Footer End-->
+    </div><!-- /.page-wrapper -->
+
+
+    <!-- /.mobile-nav__wrapper -->
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler">
+            <div class="search-close-btn">
+                <i class="icon-cancel"></i>
+            </div>
+        </div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
     <!-- /.search-popup -->
+
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+
     <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
@@ -335,11 +432,15 @@
     <script src="assets/vendors/jquery.circle-type/jquery.lettering.min.js"></script>
     <script src="assets/vendors/twentytwenty/twentytwenty.js"></script>
     <script src="assets/vendors/twentytwenty/jquery.event.move.js"></script>
-    <script src="assets/vendors/marquee/marquee.min.js"></script>
     <!-- template js -->
     <script src="assets/js/arckytec.js"></script>
+
+    <!-- form validation -->
+
+
 </body>
 
 
-<!-- Mirrored from gyanvi.edulin.in/korearch/our-project by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Jul 2024 09:29:06 GMT -->
+<!-- Mirrored from gyanvi.edulin.in/korearch/green-buildings by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Jul 2024 09:28:57 GMT -->
+
 </html>
