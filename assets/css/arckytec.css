@@ -7860,14 +7860,15 @@ a.button-style-3:hover::before {
 .about-three {
   position: relative;
   display: block;
-  padding: 130px 0 130px;
+  padding: 20px;
+  margin-top: -70px;
   z-index: 1;
 }
 
 .about-three__left {
   position: relative;
   display: block;
-  margin-right: 60px;
+  margin-right: 90px;
 }
 
 .about-three__img {
@@ -7882,7 +7883,7 @@ a.button-style-3:hover::before {
 .about-three__right {
   position: relative;
   display: block;
-  margin-top: 110px;
+  margin-top: 30px;
 }
 
 .about-three__title {
